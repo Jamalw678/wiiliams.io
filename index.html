@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douceur Skin - Product Line</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="container">
+            <h1>Douceur Skin</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h2>Discover the Essence of Natural Beauty</h2>
+            <p>Explore Douceur Skin’s exclusive range of nourishing skincare products crafted with pure, natural ingredients.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <!-- Ocean Bleu Product -->
+                <div class="product">
+                    <img src="https://assets.onecompiler.app/42v26fysm/42x7vckhc/IMG_9227%203.JPG" alt="Ocean Bleu" class="product-image">
+                    <h3>Ocean Bleu</h3>
+                    <p>A refreshing and hydrating body scrub that leaves your skin soft and glowing.</p>
+                    <p><strong>Price:</strong> $15.00</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                
+                <!-- Cotton Candy Product -->
+                <div class="product">
+                    <img src="https://assets.onecompiler.app/42v26fysm/42x9dbw44/Cottoncandy.JPG" alt="Cotton Candy" class="product-image">
+                    <h3>Cotton Candy</h3>
+                    <p>A sweet, nourishing whipped body butter that smooths and hydrates skin.</p>
+                    <p><strong>Price:</strong> $18.00</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                
+                <!-- Lavender Oil Product -->
+                <div class="product">
+                    <img src="https://assets.onecompiler.app/42v26fysm/42x9dbw44/LavenderOil.JPG" alt="Lavender Oil" class="product-image">
+                    <h3>Lavender Oil</h3>
+                    <p>Calming lavender oil blend for relaxation and rejuvenation of body and mind.</p>
+                    <p><strong>Price:</strong> $12.00</p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Douceur Skin</h2>
+            <p>Douceur Skin is dedicated to creating skincare products that blend nature's best ingredients to help you achieve radiant, healthy skin. We focus on quality, sustainability, and the nourishment that only natural elements can provide.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2024 Douceur Skin. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#"><img src="icons/facebook.svg" alt="Facebook"></a></li>
+                <li><a href="#"><img src="icons/instagram.svg" alt="Instagram"></a></li>
+                <li><a href="#"><img src="icons/twitter.svg" alt="Twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Responsive Menu and Cart -->
+    <script src="script.js"></script>
+</body>
+</html>
